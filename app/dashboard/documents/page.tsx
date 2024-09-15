@@ -51,7 +51,7 @@ export default function Home() {
 
       {documents && documents.length > 0 && (
         <div className="grid grid-cols-3 gap-8">
-          {documents?.map((doc) => <DocumentCard document={doc} />)}
+          {documents?.map((doc) => <DocumentCard key={doc._id} document={doc} />)}
         </div>
       )}
     </main>
